@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Intro a Vue.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script>
+        // cuando se carge la pagina creare una aplicacion vue
+        document.addEventListener('DOMContentLoaded', function(){
+            new Vue({
+                //para la clase reactive-text le vamos a poner el dato (data)
+                el: '.reactive-text',
+                data: {
+                    miTexto: 'I am starting with Vue ', // en miTexto le pondremos este string4
+                    nombre: 'Chayanne Garcia ',
+                    mensaje: 'Hola mundo'
+                }
+
+            });
+
+        });
+    </script>
+
+
+    <!-- en el head va el link a los css -->
+    <!-- <link rel="stylesheet" href="./jquery-form-validation.css" type="text/css"> -->
+</head>
+
+<body>
+    <div>
+        <p class="reactive-text">
+            {{miTexto}}
+            {{nombre}}
+            {{mensaje}}
+        </p>
+    </div>
+
+<!-- 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src='./jquery-form-validation.js'></script> -->
+
+
+
+
+</body>
+
+</html>
